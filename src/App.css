@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 50rem;
+  height: 35rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+}
+
+.card {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  transition: 400ms ease;
+}
+
+.card:nth-child(1) {
+  background-image: url('./img/food1.jpg');
+}
+
+.card:nth-child(2) {
+  background-image: url('./img/food2.jpg');
+}
+
+.card:hover {
+  scale: 1.05;
+  cursor: pointer;
+  box-shadow: 
+    rgba(0,0,0,0.2) 12px 12px 16px;
+}
